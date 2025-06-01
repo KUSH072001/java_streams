@@ -1,0 +1,15 @@
+
+
+     there are some functional interface --- it can have only one abstract method
+
+    1.. Predicate---> it will check can it really prasennt or not
+    2..Function---> can combine both the function
+    3..Consumer---- can consume and print
+
+
+
+steps to get the ramdom number
+  1..   if you want to get the random number we can get the random number using new Random() object
+
+    and
+  2..  we can bound the number in the nextInt()
