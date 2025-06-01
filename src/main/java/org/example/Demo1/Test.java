@@ -1,19 +1,23 @@
 package org.example.Demo1;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Random;
+import java.text.DateFormat;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.*;
 import java.util.function.Consumer;
-import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.function.Supplier;
 
 public class Test {
     public static void main(String[] args) {
 
-
-        Supplier<Integer>generator=()-> new Random().nextInt(10);
+        Predicate<Integer> predicate = x -> x % 2 == 0;
+        Supplier<String> generator = () -> {
+            LocalDate today = LocalDate.now();
+            DateTimeFormatter formmator = DateTimeFormatter.ofPattern("EEEE, MMMM, d , yyyy");
+            return today.format(formmator);
+        };
         System.out.println(generator.get());
+
     }
 }
