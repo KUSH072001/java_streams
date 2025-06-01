@@ -17,7 +17,7 @@ public class Test {
             DateTimeFormatter formmator = DateTimeFormatter.ofPattern("EEEE, MMMM, d , yyyy");
             return today.format(formmator);
         };
-        System.out.println(generator.get());
+        System.out.println(generator.get()) ;
 
     }
 }
