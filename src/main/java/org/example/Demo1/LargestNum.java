@@ -23,5 +23,22 @@ public class LargestNum {
         System.out.println(largest);
         System.out.println(smallest);
 
+
+//        String manipulation
+
+//        String str="the rains have started here selenumm";
+//        String str="the rains have started here selenumm";
+//        System.out.println(str.length());
+//        System.out.println(str.charAt(5));
+//        System.out.println(str.indexOf('s'));
+//        int second=str.indexOf('s',str.indexOf('s')+1);
+//        System.out.println(str.indexOf('s',second+1));
+        String str="He_l_lo_w_o_r_d_m_o_h_a_n";
+        String[] s = str.split("_",9);
+        System.out.println(Arrays.toString(s));
+        for(String s1:s){
+            System.out.print(s1);
+        }
+
     }
 }
